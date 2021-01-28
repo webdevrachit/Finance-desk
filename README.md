@@ -15,3 +15,9 @@ A simple app that takes user's income and expense, list them, delete it whenever
 # Demo
 [https://incumexpense.netlify.app/](https://incumexpense.netlify.app/)
 
+
+## Don't forget to give this repo a ⭐ if you like this repo and want to appreciate our efforts
+ 
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
