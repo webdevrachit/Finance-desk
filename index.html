@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Desk</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="styles/all.min.css" rel="stylesheet">
+    <link href="imgs/finance.png" rel="icon">
+
+</head>
+<body>
+    <section class="main">
+        <section class="left-side">
+            <span>
+                <h1>Finance Desk
+                    <img class="head-icon"src="imgs/finance.png" alt="...">
+                </h1> 
+                <h3 class="date"></h3>
+            </span>
+          
+
+            <select id="options" class="options">
+                <option value="inc" selected>Income</option>
+                <option value="exp">Expense</option>
+            </select>
+
+            <input type="number" placeholder="Amount" class="input-field" id="amount">
+            <input type="text" placeholder="Description" class="input-field" id="description">
+
+            <div class="buttons">
+                <button class="button" id="addBtn">ADD</button>
+            </div>
+            
+        </section>
+        <section class="right-side">
+        
+            <div class="display-amount">
+
+                <div class="balance-div">
+                    <p>Balance</p>
+                    <p id="balance">2000</p>
+                </div>
+
+                <div class="balance-div">
+                    <p>Income</p>
+                    <p id="income">1200</p>
+                </div>
+
+                <div class="balance-div">
+                    <p>Expense</p>
+                    <p id="expense">350</p>
+                </div>
+            </div>
+
+            <div>
+            </div>
+
+            <div class="list-section container">
+                <div>
+                    <h3 class="list-titles">Income</h3>
+                    <ul class="display-income-list">
+                       <!--<li class="income-list id="inc-0">
+                                <h3 id="income-name">Trading</h3>
+                                <p>3448</p>
+                                <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                        </li>-->
+                    </ul>
+                </div>
+    
+                <div>
+                    <h3  class="list-titles">Expense</h3>
+                    <ul class="display-expense-list">
+                        <!--<li class="expense-list id="exp-0">
+                                <h3 id="expense-name">Mobile</h3>
+                                <p>2500</p>
+                                <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <footer>
+        <p>Designed by <a href="https://github.com/webdevrachit">Rachit</a> with ❤️ </p>
+    </footer>
+</body>
+<script src="final.js">
+</script>
+</html>

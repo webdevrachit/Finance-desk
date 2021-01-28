@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cabin', sans-serif;
+    width: 100%;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.left-side{
+    width: 30% ;
+    background-color: #3bd381;
+}
+
+.right-side{
+    background-image: url(../imgs/main-img.png);
+    background-position: right bottom;
+    background-size: 600px 350px;
+    height:auto ;
+    background-repeat: no-repeat;
+    background-color:white;
+    width: 70% ;
+}
+
+
+h1{
+    font-size: 2rem;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 3px #2e2e2e ;
+}
+.date{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 3px 5px #2e2e2e ;
+
+}
+
+.head-icon{
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+    top: 10px;
+}
+.options{
+    font-size: 1rem !important;
+}
+
+input, .options,.buttons{
+    position: relative;
+    display: flex;
+    height: 3rem;
+    width: 20rem;
+    max-width: 15rem !important;
+    margin: 10px auto;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    outline: none;
+    top: 10%;
+    cursor: pointer;
+}
+
+
+input:focus{
+    border: 3px solid #2c81c7;
+    transition: 0.2s ease;
+}
+
+.button{
+    width: 5rem;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin: 10px auto;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+}
+
+#addBtn{
+    background-color: #2483f0;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.342);
+    color: white;
+}
+#addBtn:hover{
+    background-color: #0e76ee;
+    transform: translateY(3px);
+}
+
+.options{
+    width: 6rem !important;
+}
+
+
+.display-amount{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.balance-div{
+    height: 5rem;
+    width: 7rem;
+    background-color: #1c2b2d;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+    color: white;
+    margin: 20px auto;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.342);
+
+}
+
+.list-titles{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    margin: 20px auto;
+}
+
+.list-section{
+    display: flex;
+    justify-content:space-evenly;
+
+}
+
+.income-list, .expense-list{
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    margin-top: 10px;
+    font-size: 20px;
+}
+i{
+    font-size: 1.5rem;
+    color: #1c2b2d;
+}
+.btn{
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    transition: all 0.1s ease;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+li{
+    list-style: none;
+
+}
+footer{
+    color: white;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 2rem;
+    width: 100%;
+    background-color: #2e2e2e;
+    text-align: center;
+}
+
+a{
+    color: white;
+}
+
+@media screen and (max-width:760px){
+    .main{
+        flex-direction: column;  
+        height: auto;
+    }
+
+    .left-side , .right-side{
+        width: 100%;
+    }
+
+    .right-side{
+        height: auto;
+        background-image: none;
+    }
+
+    .list-section{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .balance-div{
+        transform: scale(0.8);
+    }
+
+    .income-list , .expense-list{
+        margin: 0 auto;
+    }
+   
+}
